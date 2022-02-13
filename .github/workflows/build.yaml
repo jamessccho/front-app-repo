@@ -42,7 +42,7 @@ jobs:
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: demo-frontend
-          IMAGE_TAG: ${{ steps.image.outputs.version }}
+          IMAGE_TAG: james-test1 #${{ steps.image.outputs.version }}
         run: |
           #echo "::set-output name=ecr_repository::$ECR_REPOSITORY"
           #echo "::set-output name=image_tag::$IMAGE_TAG"
