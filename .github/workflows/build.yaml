@@ -59,7 +59,7 @@ jobs:
           repository: jamessccho/k8s-manifest-repo
           ref: main
           token: ${{ secrets.ACTION_TOKEN }}
-            #path: k8s-manifest-repo
+          path: k8s-manifest-repo
 
       - name: Update Kubernetes resources
         run: |
