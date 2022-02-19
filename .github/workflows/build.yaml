@@ -73,7 +73,6 @@ jobs:
       - name: Commit files
         run: |
           cd k8s-manifest-repo
-          git config --global url."git@github.com:".insteadOf "https://github.com/"
           git config --global user.email "james.sungchul.cho@gmail.com"
           git config --global user.name "jamessccho"
           git commit -am "Update image tag"
